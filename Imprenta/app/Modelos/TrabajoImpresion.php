@@ -2,21 +2,20 @@
 
 namespace Modelos;
 
-class Cotizable 
+interface Cotizable
 {
-
+    public function totalHojas(): int;
+    public function porcentajeDescuento(): float;
+    public function total(): float;
 }
 
-
-
-abstract class TrabajoImpesion implements Cotizable
-{ 
+abstract class TrabajoImpresion implements Cotizable
+{
     public function __construct(
-        public readonly string $descricion,
-        public readonly string $paginas,
-        public readonly string $hojas
-    ){}
+        public readonly string $descripcion,
+        public readonly int $paginas,
+        public readonly int $copias
+    ) {}
+
+    abstract public function precioPorPagina(): float;
 }
-
-
-?>

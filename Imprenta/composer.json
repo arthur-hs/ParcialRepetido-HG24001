@@ -3,7 +3,7 @@
     "description": "Parcial Repetido TPI",
     "autoload": {
         "psr-4": {
-            "Root\\Html\\": "Imprenta/"
+            "App\\": "src/"
         }
     },
     "authors": [

@@ -5,6 +5,6 @@ services:
     container_name: server-apache2-2
     restart: always
     volumes:
-      - ./Prestamos:/var/www/html
+      - ./var/www/html
     ports:
       - "8089:80"

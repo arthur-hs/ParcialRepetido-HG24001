@@ -15,7 +15,9 @@ abstract class TrabajoImpresion implements Cotizable
         public readonly string $descripcion,
         public readonly int $paginas,
         public readonly int $copias
-    ) {}
+    ) {
+        
+    }
 
     abstract public function precioPorPagina(): float;
 }

@@ -2,7 +2,10 @@
 
 namespace Excepciones;
 
-class ContizacionInvalidaException extends \InvalidArgumentException{
+class ContizacionInvalidaException extends \DomainException{
+
+    public function __construct(public readonly string $mensaje)
+{}
 
 }
 

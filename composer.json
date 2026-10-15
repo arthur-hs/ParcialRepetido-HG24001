@@ -1,0 +1,15 @@
+{
+    "name": "root/html",
+    "description": "Parcial Repetido TPI",
+    "autoload": {
+        "psr-4": {
+            "Root\\Html\\": "Imprenta/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arturo Gutierrez"
+        }
+    ],
+    "require": {}
+}
